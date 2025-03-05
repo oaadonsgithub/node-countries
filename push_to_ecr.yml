@@ -5,7 +5,7 @@
       workflows: ["Deploy to EC2 Test"]
       types:
         - completed
-
+        
   jobs:
     Build:
       name: Build
