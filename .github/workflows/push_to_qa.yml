@@ -1,4 +1,4 @@
-  name: Push the Docker image to AWS ECR Repo
+  name: Push ECR Image to QA Server
   on:
     push:
       branches:
