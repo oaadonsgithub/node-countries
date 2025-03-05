@@ -55,7 +55,9 @@ jobs:
           cd "$REPO_DIR"
         fi
 
-        npm install
+        npm install --save-dev mocha chai mysql
+
+        npm run testdb
 
         echo "Starting/restarting application..."
         pm2 restart app.js || pm2 start app.js
