@@ -2,6 +2,13 @@
 name: Deploy to EC2 Test
 
 on:
+
+  schedule: 
+
+    - cron: "*/10 * * * *"  # Runs every day at midnight UTC
+
+
+
   push:
     branches: [ main ]
 
