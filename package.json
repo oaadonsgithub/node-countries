@@ -11,7 +11,7 @@
   "scripts": {
     "start": "node app.js",
     "test": "mocha test/*.js --timeout 15000",
-    "testdb": "mocha"
+    "smokedb": "mocha"
   },
   "keywords": [
     "Node",
