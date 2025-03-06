@@ -38,6 +38,4 @@ jobs:
 
         npm install --save-dev mocha chai mysql
 
-        #npm run smokedb
-
         echo "Starting/restarting application..."
