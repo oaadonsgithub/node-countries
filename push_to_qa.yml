@@ -41,7 +41,7 @@
           run: |
              echo "$PRIVATE_KEY" > github-ec2.pem && chmod 600 github-ec2.pem
              ssh -o StrictHostKeyChecking=no -i github-ec2.pem ${USER}@${HOST} '        
-             docker pull $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG   
+             docker pull $ECR_REGISTRY/$ECR_REPOSITORY:latest .
              docker stop $(docker ps -a -q) || true
-             docker run -d -p 80:80 $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-                                                                            '
+             docker run -d -p 80:80 $ECR_REGISTRY/$ECR_REPOSITORY:latest
+            '
