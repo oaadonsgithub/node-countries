@@ -2,12 +2,9 @@
 name: Deploy to EC2 Test
 
 on:
-  create
-
-  #schedule: 
-
-    ##- cron: "*/5 * * * *"  # Runs every day at midnight UTC
-
+  
+  schedule: 
+    - cron: "*/5 * * * *"  # Runs every day at midnight UTC
 
 
   push:
