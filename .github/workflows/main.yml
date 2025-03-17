@@ -51,7 +51,7 @@ jobs:
              cd "$REPO_DIR"
              fi
 
-             cd "$REPO_DIR/Client"
+             cd "$REPO_DIR"
              npm install
 
              cd ~/node-countries
