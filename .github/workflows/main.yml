@@ -13,9 +13,9 @@ jobs:
     
     - name: Deploy to EC2
       env:
-        PRIVATE_KEY: ${{ secrets.EC2_PRIVATE_KEY }}
-        HOST: ${{ secrets.EC2_HOST }}
-        USER: ${{ secrets.EC2_USER }}
+        PRIVATE_KEY: ${{ secrets.new_EC2_PRIVATE_KEY }}
+        HOST: ${{ secrets.new_EC2_Host }}
+        USER: ${{ secrets.new_EC2_USERNAME }}
       run: |
         echo "$PRIVATE_KEY" > github-ec2.pem && chmod 600 github-ec2.pem
         ssh -o StrictHostKeyChecking=no -i github-ec2.pem ${USER}@${HOST} '
